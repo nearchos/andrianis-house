@@ -2,23 +2,145 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Andriani's House - A renovated listed stone house from the 19th century in Agios Athanasios">
+  <meta name="keywords" content="stone house, renovation, heritage building, Agios Athanasios, listed building">
   <title>Andriani's House - Renovated listed stone house from 19th century</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Georgia', serif;
+      color: #2c3e50;
+      margin-top: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      color: #34495e;
+      border-bottom: 2px solid #e67e22;
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      border-left: 4px solid #e67e22;
+      padding-left: 15px;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      color: #3498db;
+    }
+
+    h4 {
+      font-size: 1.2em;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #e67e22;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #d35400;
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    figcaption, small {
+      display: block;
+      text-align: center;
+      font-style: italic;
+      color: #7f8c8d;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    /* Section Styles */
+    section {
+      margin-bottom: 40px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    /* Unit Cards */
+    .unit-card {
+      margin: 20px 0;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    td {
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      table td {
+        display: block;
+        width: 100% !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <header>
+    <h1>Andriani's House</h1>
+  </header>
 
-  <h1>Andriani's House</h1>
-
-  <h2>Heritage</h2>
-  <div>
+  <section id="heritage">
+    <h2>Heritage</h2>
     <p>
       Renovated stone house. A building with architectural significance, dated from the mid-19th century. Listed with the Department for Preservation of Cultural Heritage.
     </p>
-    <p>
-      <img src="imgs/restoration/20250516_114306.jpg" width="800" alt="External view of the building, camera facing north (May 2025)"/>
-      <br>
-      <small>External view of the building, camera facing north (May 2025)</small>
-    </p>
+    <figure>
+      <img src="imgs/restoration/20250516_114306.jpg" alt="External view of the building, camera facing north (May 2025)"/>
+      <figcaption>External view of the building, camera facing north (May 2025)</figcaption>
+    </figure>
     <p>
       The building has several architectural elements pointing to its original construction as a farm house:
       A large living room with a fire-place, a living room with a central stone-built arch, a stable, a stone-built stair with decorations, and an inner yard.
@@ -29,168 +151,195 @@
     <p>
       The building was constructed in phases, from middle to late 19th century. The north-facing entrance was added in 1891 as it is shown by the stone inscription at its top.
     </p>
-    <p>
-      <a href="imgs/architecture/north-entrance-1891.jpg">
-        <img src="imgs/architecture/north-entrance-1891-zoom.jpg" width="800" alt="The north entrance of the building with the inscribed construction date on top.">
-        <br>
-        <small>The north entrance of the building with the inscribed construction date on top.</small>
-      </a>
-    </p>
-  </div>
+    <div style="text-align: center;">
+      <figure>
+        <a href="imgs/architecture/north-entrance-1891.jpg">
+          <img src="imgs/architecture/north-entrance-1891-zoom.jpg" alt="The north entrance of the building with the inscribed construction date on top.">
+        </a>
+        <figcaption>The north entrance of the building with the inscribed construction date on top.</figcaption>
+      </figure>
+    </div>
+  </section>
 
-  <h2>Renovation</h2>
-  <div>
+  <section id="renovation">
+    <h2>Renovation</h2>
     <p>
       The building is currently being renovated. Planning and designs started already in 2020, while the construction started in 2023. It is expected to be complete by the summer of 2025.
     </p>
-  </div>
 
-  <h3>Units</h3>
-  <div>
+    <h3>Units</h3>
     <p>The building consists of 342 sqm of covered areas plus 76 sqm yard. These are organised as 5 individual apartments.</p>
     <p>All the apartments have their own entrance, with access to the shared, central yard.</p>
-    <p>
-      <a href="imgs/plans/apts-ground-floor.png">
-        <img src="imgs/plans/apts-ground-floor.png" width="400"/>
-      </a>
-      <a href="imgs/plans/apts-first-floor.png">
-        <img src="imgs/plans/apts-first-floor.png" width="400"/>
-      </a>
-    </p>
-  </div>
+    <table>
+      <tr>
+        <td style="width: 50%; text-align: center;">
+          <a href="imgs/plans/apts-ground-floor.png">
+            <img src="imgs/plans/apts-ground-floor.png" alt="Ground floor plan"/>
+          </a>
+          Ground floor
+        </td>
+        <td style="width: 50%; text-align: center;">
+          <a href="imgs/plans/apts-first-floor.png">
+            <img src="imgs/plans/apts-first-floor.png" alt="First floor plan"/>
+          </a>
+          First floor
+        </td>
+      </tr>
+    </table>
 
-  <div style="margin: 20px; border: 2px solid yellow; border-radius: 10px; padding: 10px; width:760px;">
-    <h4>Unit 1 - Dichoro (or Kamara)</h4>
-    <p>This is a studio apartment of 50 sqm, with a private bathroom and kitchen. Its most prominent feature is a stonebuilt arch, splitting the space to two (thus 'Dichoro' or two-volumes).</p>
-    <p>It includes a large door and two windows facing the shared, covered veranda space. Additionally, it has window facing the yard, plus another floor-to-top window also facing the yard.</p>
-    <p>It features a complete kitchen (sink, stove, oven, extractor, refrigerator, and space for a washing machine).</p>
-    <p>It has a private bathroom with a shower.</p>
-    <p>It includes heating (underfloor electric system) and cooling (air conditioner with inverter).</p>
-  </div>
+    <div class="unit-card" style="border: 2px solid yellow; border-radius: 10px; padding: 10px;">
+      <h4>Unit 1 - Dichoro (or Kamara)</h4>
+      <p>This is a studio apartment of 50 sqm, with a private bathroom and kitchen. Its most prominent feature is a stonebuilt arch, splitting the space to two (thus 'Dichoro' or two-volumes).</p>
+      <p>It includes a large door and two windows facing the shared, covered veranda space. Additionally, it has window facing the yard, plus another floor-to-top window also facing the yard.</p>
+      <p>It features a complete kitchen (sink, stove, oven, extractor, refrigerator, and space for a washing machine).</p>
+      <p>It has a private bathroom with a shower.</p>
+      <p>It includes heating (underfloor electric system) and cooling (air conditioner with inverter).</p>
+    </div>
 
-  <div style="margin: 20px; border: 2px solid orange; border-radius: 10px; padding: 10px; width:760px;">
-    <h4>Unit 2 - Acheronari (hay room)</h4>
-    <p>This is a studio apartment of 37 sqm, with a private bathroom and kitchenette. Its most prominent feature is the high ceiling and the added steel-made mezzanine. This room was originally built for hay storage.</p>
-    <p>It includes a large door and two windows facing the shared, covered veranda space.</p>
-    <p>It features a small kitchenette (with a sink and provision for a freestanding stove and oven, and a refrigerator).</p>
-    <p>It has a private bathroom with a shower.</p>
-    <p>It includes heating (underfloor electric system) and cooling (air conditioner with inverter).</p>
-  </div>
+    <div class="unit-card" style="border: 2px solid orange; border-radius: 10px; padding: 10px;">
+      <h4>Unit 2 - Acheronari (hay room)</h4>
+      <p>This is a studio apartment of 37 sqm, with a private bathroom and kitchenette. Its most prominent feature is the high ceiling and the added steel-made mezzanine. This room was originally built for hay storage.</p>
+      <p>It includes a large door and two windows facing the shared, covered veranda space.</p>
+      <p>It features a small kitchenette (with a sink and provision for a freestanding stove and oven, and a refrigerator).</p>
+      <p>It has a private bathroom with a shower.</p>
+      <p>It includes heating (underfloor electric system) and cooling (air conditioner with inverter).</p>
+    </div>
 
-  <div style="margin: 20px; border: 2px solid greenyellow; border-radius: 10px; padding: 10px; width:760px;">
-    <h4>Unit 3 - Kafenio (old coffee house)</h4>
-    <p>This is the largest unit, in effect a two-story townhouse with a living room, a common area, and 2 large bedrooms. It covers a large space, with a ground floor area of 45 sqm and a first floor area of another 60 sqm. Its most prominent feature is the fireplace in the kitchen area and the great views from the first floor windows facing the balcony.</p>
-    <p>It features its own road-facing entrance and two windows, plus a window and large door facing the inner shared yard. On the first floor, the rooms have large windows facing the street, plus doors facing the balcony.</p>
-    <p>It features a complete kitchen (sink, stove, oven, extractor, refrigerator, and space for a washing machine).</p>
-    <p>It has a private bathroom with a shower, on the first floor.</p>
-    <p>The two levels are connected via a steel-made helix staircase.</p>
-    <p>It includes heating (underfloor electric system with independent controls for each room, except for a wall-mounted heater for the room with the wooden floor) and cooling (air conditioners with inverter in each room).</p>
-    <p><i>Note: This unit can be combined with Unit 4, as they are separated by a shared door on the ground floor, allowing for more space if needed.</i></p>
-  </div>
+    <div class="unit-card" style="border: 2px solid greenyellow; border-radius: 10px; padding: 10px;">
+      <h4>Unit 3 - Kafenio (old coffee house)</h4>
+      <p>This is the largest unit, in effect a two-story townhouse with a living room, a common area, and 2 large bedrooms. It covers a large space, with a ground floor area of 45 sqm and a first floor area of another 60 sqm. Its most prominent feature is the fireplace in the kitchen area and the great views from the first floor windows facing the balcony.</p>
+      <p>It features its own road-facing entrance and two windows, plus a window and large door facing the inner shared yard. On the first floor, the rooms have large windows facing the street, plus doors facing the balcony.</p>
+      <p>It features a complete kitchen (sink, stove, oven, extractor, refrigerator, and space for a washing machine).</p>
+      <p>It has a private bathroom with a shower, on the first floor.</p>
+      <p>The two levels are connected via a steel-made helix staircase.</p>
+      <p>It includes heating (underfloor electric system with independent controls for each room, except for a wall-mounted heater for the room with the wooden floor) and cooling (air conditioners with inverter in each room).</p>
+      <p><i>Note: This unit can be combined with Unit 4, as they are separated by a shared door on the ground floor, allowing for more space if needed.</i></p>
+    </div>
 
-  <div style="margin: 20px; border: 2px solid cyan; border-radius: 10px; padding: 10px; width:760px;">
-    <h4>Unit 4 - Raftadiko (old tailor house)</h4>
-    <p>This is a one-bedroom apartment of 57 sqm, with a private bathroom. A prominent feature is the stable with a ceiling constructed of wooden branches and a floor constructed with rock plates.</p>
-    <p>It features its own street-facing, plus a large door facing the inner shared yard.</p>
-    <p>It has a private bathroom with a shower.</p>
-    <p>It includes heating (underfloor electric system for the main room and wall-mounted electric heater for the stable) and cooling (air conditioners with inverter in each room).</p>
-  </div>
+    <div class="unit-card" style="border: 2px solid cyan; border-radius: 10px; padding: 10px;">
+      <h4>Unit 4 - Raftadiko (old tailor house)</h4>
+      <p>This is a one-bedroom apartment of 57 sqm, with a private bathroom. A prominent feature is the stable with a ceiling constructed of wooden branches and a floor constructed with rock plates.</p>
+      <p>It features its own street-facing, plus a large door facing the inner shared yard.</p>
+      <p>It has a private bathroom with a shower.</p>
+      <p>It includes heating (underfloor electric system for the main room and wall-mounted electric heater for the stable) and cooling (air conditioners with inverter in each room).</p>
+    </div>
 
-  <div style="margin: 20px; border: 2px solid mediumpurple; border-radius: 10px; padding: 10px; width:760px;">
-    <h4>Unit 5 - Anooui (mezzanine room)</h4>
-    <p>This is a studio apartment of 30 sqm, with a private bathroom and kitchenette. The entrance of this room is at the stairs, halfway up the first floor.</p>
-    <p>It includes a door facing the stairs and the shared yard. It also has two windows facing south-east towards the square where the town house is.</p>
-    <p>It features a small kitchenette (with a sink and provision for a freestanding stove and oven, and a refrigerator).</p>
-    <p>It has a private bathroom with a shower.</p>
-    <p>It includes heating (underfloor electric system) and cooling (air conditioner with inverter).</p>
-  </div>
+    <div class="unit-card" style="border: 2px solid mediumpurple; border-radius: 10px; padding: 10px;">
+      <h4>Unit 5 - Anooui (mezzanine room)</h4>
+      <p>This is a studio apartment of 30 sqm, with a private bathroom and kitchenette. The entrance of this room is at the stairs, halfway up the first floor.</p>
+      <p>It includes a door facing the stairs and the shared yard. It also has two windows facing south-east towards the square where the town house is.</p>
+      <p>It features a small kitchenette (with a sink and provision for a freestanding stove and oven, and a refrigerator).</p>
+      <p>It has a private bathroom with a shower.</p>
+      <p>It includes heating (underfloor electric system) and cooling (air conditioner with inverter).</p>
+    </div>
 
-  <h3>Status</h3>
-  <div>
+    <h3>Status</h3>
     <p>The building is currently under restoration. Work started in 2023 and is expected to be complete during the summer of 2025.</p>
-    <p>
-      <a href="imgs/aero/viber_image_2023-07-19_08-44-09-257.jpg">
-        <img src="imgs/aero/viber_image_2023-07-19_08-44-09-257.jpg" alt="Aerial view of the building during roof reconstruction (July 2023)" width="800"/>
-      </a>
-    </p>
-    <p>
-      <small>Aerial view of the building during roof reconstruction (July 2023)</small>
-    </p>
-  </div>
+  </section>
 
-  <h2>Photographs</h2>
-  <table>
-    <tr>
-      <td style="width: 400px;">
-        <a href="imgs/restoration/20250613_095110.jpg">
-          <img src="imgs/restoration/20250613_095110.jpg" alt="The stone-built arch in Dichoro (Jun 2025)" width="400"/>
-        </a>
-        <br>
-        <small>The stone-built arch in Dichoro (Jun 2025)</small>
-      </td>
-      <td style="width: 400px;">
-        <a href="imgs/restoration/20231122_080256.jpg">
-          <img src="imgs/restoration/20231122_080256.jpg" alt="-side corner of the building, forming Acheronari (Nov 2023)" width="400"/>
-        </a>
-        <br>
-        <small>North-side corner of the building, forming Acheronari (Nov 2023)</small>
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 400px;">
-        <a href="imgs/restoration/20250613_074107(1).jpg">
-          <img src="imgs/restoration/20250613_074107(1).jpg" alt="West side of the building, forming Kafenio (two-story house) and the entrance of Raftadiko at far right (Jun 2025)" width="400"/>
-        </a>
-        <br>
-        <small>West side of the building, forming Kafenio (two-story house) and the
-          entrance of Raftadiko at far right (Jun 2025)</small>
-      </td>
-      <td>
-        <a href="imgs/restoration/20250627_090317(1).jpg">
-          <img src="imgs/restoration/20250627_090317(1).jpg" alt="Inside peek of Kafenio, showing the side facing the street as well as the steel-made helix staircase that leads to the first floor (Jun 2025)" width="400"/>
-        </a>
-        <br>
-        <small>Inside peek of Kafenio, showing the side facing the street as well as the steel-made helix staircase that leads to the first floor (Jun 2025)</small>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="imgs/restoration/20250323_113958.jpg">
-          <img src="imgs/restoration/20250323_113958.jpg" alt="View of Anooui studio with details of the door leading to the stone-built staircase and one of the windows facing the town hall (March 2025)" width="400"/>
-        </a>
-        <br>
-        <small>View of Anooui studio with details of the door leading to the stone-built staircase and one of the windows facing the town hall (March 2025)</small>
-      </td>
-      <td>
-        <a href="imgs/restoration/20250516_113958.jpg">
-          <img src="imgs/restoration/20250516_113958.jpg" alt="The stone-built staircase and the covered balcony connecting the first floor rooms (May 2025)" width="400"/>
-        </a>
-        <br>
-        <small>The stone-built staircase and the covered balcony connecting the first floor rooms (May 2025)</small>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="imgs/restoration/20250613_101847(1).jpg">
-          <img src="imgs/restoration/20250613_101847(1).jpg" alt="" width="400"/>
-        </a>
-        <br>
-        <small>View of the shared, inner yard as viewed from the first floor, featuring the two windows of Dichoro facing the yard (Jun 2025)</small>
-      </td>
-      <td>
-        <a href="imgs/restoration/20250613_101423(1).jpg">
-          <img src="imgs/restoration/20250613_101423(1).jpg" alt="View of the shared, inner yard as viewed from the ground, showing Dichoro on the right, and Perasma (passway) on the left (Jun 2025)" width="400"/>
-        </a>
-        <br>
-        <small>View of the shared, inner yard as viewed from the ground, showing Dichoro on the right, and Perasma (passway) on the left (Jun 2025)</small>
-      </td>
-    </tr>
-  </table>
+  <section id="photographs">
+    <h2>Photographs</h2>
+    <table>
+      <tr>
+        <td style="width: 400px;">
+          <figure>
+            <a href="imgs/restoration/20230330_082730.jpg">
+              <img src="imgs/restoration/20230330_082730.jpg" alt="The passageway between Dichoro and Acheronari shortly before beginning restoration (Mar 2023)"/>
+            </a>
+            <figcaption>The passageway between Dichoro and Acheronari shortly before beginning restoration (Mar 2023)</figcaption>
+          </figure>
+        </td>
+        <td style="width: 400px;">
+          <figure>
+            <a href="imgs/aero/viber_image_2023-07-19_08-44-09-257.jpg">
+              <img src="imgs/aero/viber_image_2023-07-19_08-44-09-257.jpg" alt="Aerial view of the building during roof reconstruction (July 2023)"/>
+            </a>
+            <figcaption>Aerial view of the building during roof reconstruction (July 2023)</figcaption>
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 400px;">
+          <figure>
+            <a href="imgs/restoration/20250613_095110.jpg">
+              <img src="imgs/restoration/20250613_095110.jpg" alt="The stone-built arch in Dichoro (Jun 2025)"/>
+            </a>
+            <figcaption>The stone-built arch in Dichoro (Jun 2025)</figcaption>
+          </figure>
+        </td>
+        <td style="width: 400px;">
+          <figure>
+            <a href="imgs/restoration/20231122_080256.jpg">
+              <img src="imgs/restoration/20231122_080256.jpg" alt="North-side corner of the building, forming Acheronari (Nov 2023)"/>
+            </a>
+            <figcaption>North-side corner of the building, forming Acheronari (Nov 2023)</figcaption>
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 400px;">
+          <figure>
+            <a href="imgs/restoration/20250613_074107(1).jpg">
+              <img src="imgs/restoration/20250613_074107(1).jpg" alt="West side of the building, forming Kafenio (two-story house) and the entrance of Raftadiko at far right (Jun 2025)"/>
+            </a>
+            <figcaption>West side of the building, forming Kafenio (two-story house) and the entrance of Raftadiko at far right (Jun 2025)</figcaption>
+          </figure>
+        </td>
+        <td>
+          <figure>
+            <a href="imgs/restoration/20250627_090317(1).jpg">
+            </a>
+            <img src="imgs/restoration/20250627_090317(1).jpg" alt="Inside peek of Kafenio, showing the side facing the street as well as the steel-made helix staircase that leads to the first floor (Jun 2025)"/>
+            <figcaption>Inside peek of Kafenio, showing the side facing the street as well as the steel-made helix staircase that leads to the first floor (Jun 2025)</figcaption>
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <figure>
+            <a href="imgs/restoration/20250323_113958.jpg">
+              <img src="imgs/restoration/20250323_113958.jpg" alt="View of Anooui studio with details of the door leading to the stone-built staircase and one of the windows facing the town hall (March 2025)"/>
+            </a>
+            <figcaption>View of Anooui studio with details of the door leading to the stone-built staircase and one of the windows facing the town hall (March 2025)</figcaption>
+          </figure>
+        </td>
+        <td>
+          <figure>
+            <a href="imgs/restoration/20250516_113958.jpg">
+              <img src="imgs/restoration/20250516_113958.jpg" alt="The stone-built staircase and the covered balcony connecting the first floor rooms (May 2025)"/>
+            </a>
+            <figcaption>The stone-built staircase and the covered balcony connecting the first floor rooms (May 2025)</figcaption>
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <figure>
+            <a href="imgs/restoration/20250613_101847(1).jpg">
+              <img src="imgs/restoration/20250613_101847(1).jpg" alt="View of the shared, inner yard as viewed from the first floor"/>
+            </a>
+            <figcaption>View of the shared, inner yard as viewed from the first floor, featuring the two windows of Dichoro facing the yard (Jun 2025)</figcaption>
+          </figure>
+        </td>
+        <td>
+          <figure>
+            <a href="imgs/restoration/20250613_101423(1).jpg">
+              <img src="imgs/restoration/20250613_101423(1).jpg" alt="View of the shared, inner yard as viewed from the ground, showing Dichoro on the right, and Perasma (passway) on the left (Jun 2025)"/>
+            </a>
+            <figcaption>View of the shared, inner yard as viewed from the ground, showing Dichoro on the right, and Perasma (passway) on the left (Jun 2025)</figcaption>
+          </figure>
+        </td>
+      </tr>
+    </table>
+  </section>
 
-  <h2>Contact</h2>
-  <div>
+  <section id="contact">
+    <h2>Contact</h2>
     <p>For more information, please email me at <a href="mailto:nearchos@gmail.com">nearchos at gmail dot com</a>.</p>
-  </div>
+  </section>
 
+  <footer>
+    <p>&copy; 2025. All rights reserved.</p>
+  </footer>
 </body>
 </html>
